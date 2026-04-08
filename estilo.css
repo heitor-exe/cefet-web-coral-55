@@ -106,14 +106,29 @@ body {
 }
 
 /* EXERCÍCIO 4: cada item do menu */
-article {}
+article {
+  /* Flexbox para alinhar nome e preço */
+  display: flex;
+  justify-content: space-between;
+
+  /* Espaçamento vertical duplo */
+  line-height: 2;
+}
 
 
 /* EXERCÍCIO 5: o rodapé */
-#rodape-pagina {}
+#rodape-pagina {
+  display: flex;
+  justify-content: flex-end;
+  padding: 48px 15px 25px 0;
+}
 
 /* EXERCÍCIO 6: lateral */
-#lateral {}
+#lateral {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
 
 /* EXERCÍCIO 7: o ticket */
