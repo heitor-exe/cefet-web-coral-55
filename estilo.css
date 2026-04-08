@@ -20,6 +20,7 @@ strong {
   border-top: 1px solid #aac0ae;
   border-bottom: 1px solid #aac0ae;
   border-left: 1px solid #aac0ae;
+  padding: 0px 20px 20px;
 }
 
 #cardapio h3 {
@@ -48,12 +49,11 @@ body {
 
 #recipiente {
   /* layout da página aqui */
-  width: 960px;
+  width: 800px;
   margin: 0 auto;
   display: grid;
 
-  /* Coluna 1: 200px (lateral) | Coluna 2: o restante (cardápio) */
-  grid-template-columns: 200px 1fr;
+  grid-template-columns: 154px 1fr;
 
   /* Linha 1: automática (header) 
      Linha 2: cresce conforme o conteúdo (1fr)
@@ -84,7 +84,9 @@ body {
 
 
 /* EXERCÍCIO 3: cabeçalho da página */
-#cabecalho-pagina {}
+#cabecalho-pagina {
+  padding: 10px 20px 10px 0;
+}
 
 #cabecalho-pagina h1 {
   margin: 0;
@@ -92,13 +94,15 @@ body {
   color: #e90c0c;
   font-weight: normal;
   font-family: "Ravie", sans-serif;
+  text-align: center;
 }
 
 #cabecalho-pagina h2 {
-  margin: 0;
+  margin: 10px 0 0 0;
   font-size: 24px;
   color: #333;
   font-weight: normal;
+  text-align: right;
 }
 
 /* EXERCÍCIO 4: cada item do menu */
