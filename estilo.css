@@ -42,8 +42,8 @@ body,
 }
 
 body {
-  margin: 0;
   /* remove a margem padrão */
+  margin: 0;
 }
 
 #recipiente {
@@ -51,12 +51,18 @@ body {
   width: 960px;
   margin: 0 auto;
   display: grid;
+
+  /* Coluna 1: 200px (lateral) | Coluna 2: o restante (cardápio) */
   grid-template-columns: 200px 1fr;
+
+  /* Linha 1: automática (header) 
+     Linha 2: cresce conforme o conteúdo (1fr)
+     Linha 3: automática (footer) */
   grid-template-rows: auto 1fr auto;
   grid-template-areas:
-    "header header"
+    "lateral header"
     "lateral cardapio"
-    "footer footer";
+    "lateral footer";
 }
 
 #cabecalho-pagina {
