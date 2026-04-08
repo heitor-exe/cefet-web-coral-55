@@ -1,8 +1,7 @@
 /* EXERCÍCIO 1: fontes */
-/* importá-las aqui... e definir as `font-family` da turminha... */
-
 
 body {
+  font-family: "Verdana", sans-serif;
   background-color: #fff;
 }
 
@@ -36,42 +35,57 @@ strong {
 
 
 /* EXERCÍCIO 2: layout da página */
+html,
+body,
+#recipiente {
+  min-height: 100vh;
+}
+
+body {
+  margin: 0;
+  /* remove a margem padrão */
+}
+
 #recipiente {
   /* layout da página aqui */
-  /* ... */
-  /* ... */
-  /* ... */
-  /* ... */
+  width: 960px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "header header"
+    "lateral cardapio"
+    "footer footer";
 }
 
 #cabecalho-pagina {
-
+  grid-area: header;
 }
 
 #lateral {
-
+  grid-area: lateral;
 }
 
 #cardapio {
-
+  grid-area: cardapio;
 }
 
 #rodape-pagina {
-
+  grid-area: footer;
 }
 
 
 
 /* EXERCÍCIO 3: cabeçalho da página */
-#cabecalho-pagina {
-
-}
+#cabecalho-pagina {}
 
 #cabecalho-pagina h1 {
   margin: 0;
   font-size: 36px;
   color: #e90c0c;
   font-weight: normal;
+  font-family: "Ravie", sans-serif;
 }
 
 #cabecalho-pagina h2 {
@@ -82,33 +96,26 @@ strong {
 }
 
 /* EXERCÍCIO 4: cada item do menu */
-article {
-}
+article {}
 
 
 /* EXERCÍCIO 5: o rodapé */
-#rodape-pagina {
-}
+#rodape-pagina {}
 
 /* EXERCÍCIO 6: lateral */
-#lateral {
-}
+#lateral {}
 
 
 /* EXERCÍCIO 7: o ticket */
-#ticket {
-}
+#ticket {}
 
-#ticket:hover {
-}
+#ticket:hover {}
 
 
 /* EXERCÍCIO 8: deslocamento no siri e peixe */
-#siri {
-}
+#siri {}
 
-#peixe {
-}
+#peixe {}
 
 /* EXERCÍCIO 9: bolhas - no HTML e no JS */
 /* --- */
@@ -119,4 +126,3 @@ article {
    as custom properties */
 /* coloque aqui a media query para sobrescrever o valor
    das custom properties para o modo escuro */
-
